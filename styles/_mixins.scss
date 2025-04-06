@@ -1,0 +1,6 @@
+@mixin font-style($size, $weight, $line-height, $letter-spacing) {
+    font-family: 'Manrope', sans-serif;
+    weight: $weight;
+    line-height: $line-height;
+    letter-spacing: $letter-spacing;
+}
