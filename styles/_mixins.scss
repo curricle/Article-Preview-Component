@@ -3,7 +3,7 @@
 @mixin text-style($size: 13px, $weight: 500, $line-height: 140%, $letter-spacing: 0.12%, $selectors...) {
     font-family: 'Manrope', sans-serif;
     font-size: $size;
-    weight: $weight;
+    font-weight: $weight;
     line-height: $line-height;
     letter-spacing: $letter-spacing;
 }

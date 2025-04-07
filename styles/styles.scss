@@ -6,6 +6,7 @@
     src: url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 }
 
+// Text Presets
 .text-preset-1 {
     @include text-style(20px, 700, 130%, 0.25px);
     color: $grey-900;
@@ -26,9 +27,101 @@
     text-transform: uppercase;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $grey-200;
+}
+
+.article-preview {
+    height: 280px;
+    width: 80%;
+    max-width: 730px;
+    background-color: $white;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 0px 40px 40px hsla(210, 29%, 84%, 50%);
+}
+
+.featured-image {
+    width: 285px;
+    background-image: url("../images/drawers.jpg");
+    background-size: cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.article-preview-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 60%;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.article-preview-text {
+    padding: 30px $spacing-500;
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-300;
+}
+
+.article-preview-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px $spacing-500 30px $spacing-500;
+
+    button {
+        width: $spacing-400;
+        height: $spacing-400;
+        border-radius: $spacing-400;
+        border: none;
+        background: $grey-200;
+
+        &:hover {
+            background: $grey-500; 
+
+            img {
+                filter: brightness(3);
+            }
+        }
+
+       
+    }
+}
+
+.author {
+    display: flex;
+    gap: $spacing-200;
+
+    picture {
+        img {
+            width: $spacing-500;
+            height: $spacing-500;
+            border-radius: $spacing-500;
+        }   
+    }
+}
+
+.article-details {
+    display: flex;
+    flex-direction: column;
+}
+
 .attribution { 
     @include text-style;
     text-align: center; 
+    margin-top: $spacing-300;
 }
 .attribution a { 
     @include text-style;

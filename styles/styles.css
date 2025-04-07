@@ -5,7 +5,7 @@
 .text-preset-1 {
   font-family: "Manrope", sans-serif;
   font-size: 20px;
-  weight: 700;
+  font-weight: 700;
   line-height: 130%;
   letter-spacing: 0.25px;
   color: hsl(217, 19%, 35%);
@@ -14,7 +14,7 @@
 .text-preset-2__medium {
   font-family: "Manrope", sans-serif;
   font-size: 13px;
-  weight: 500;
+  font-weight: 500;
   line-height: 140%;
   letter-spacing: 0.12%;
   color: hsl(214, 17%, 51%);
@@ -23,7 +23,7 @@
 .text-preset-2__bold {
   font-family: "Manrope", sans-serif;
   font-size: 13px;
-  weight: 700;
+  font-weight: 700;
   line-height: 140%;
   letter-spacing: 0.12%;
   color: hsl(217, 19%, 35%);
@@ -32,25 +32,109 @@
 .text-preset-3 {
   font-family: "Manrope", sans-serif;
   font-size: 13px;
-  weight: 500;
+  font-weight: 500;
   line-height: 140%;
   letter-spacing: 25%;
   text-transform: uppercase;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(210, 46%, 95%);
+}
+
+.article-preview {
+  height: 280px;
+  width: 80%;
+  max-width: 730px;
+  background-color: hsl(0, 100%, 100%);
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0px 40px 40px hsla(210, 29%, 84%, 0.5);
+}
+
+.featured-image {
+  width: 285px;
+  background-image: url("../images/drawers.jpg");
+  background-size: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+.article-preview-content {
+  display: flex;
+  flex-direction: column;
+  max-width: 60%;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.article-preview-text {
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.article-preview-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 40px 30px 40px;
+}
+.article-preview-footer button {
+  width: 32px;
+  height: 32px;
+  border-radius: 32px;
+  border: none;
+  background: hsl(210, 46%, 95%);
+}
+.article-preview-footer button:hover {
+  background: hsl(214, 17%, 51%);
+}
+.article-preview-footer button:hover img {
+  filter: brightness(3);
+}
+
+.author {
+  display: flex;
+  gap: 16px;
+}
+.author picture img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+
+.article-details {
+  display: flex;
+  flex-direction: column;
+}
+
 .attribution {
   font-family: "Manrope", sans-serif;
   font-size: 13px;
-  weight: 500;
+  font-weight: 500;
   line-height: 140%;
   letter-spacing: 0.12%;
   text-align: center;
+  margin-top: 24px;
 }
 
 .attribution a {
   font-family: "Manrope", sans-serif;
   font-size: 13px;
-  weight: 500;
+  font-weight: 500;
   line-height: 140%;
   letter-spacing: 0.12%;
   color: hsl(214, 17%, 51%);
