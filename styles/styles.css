@@ -8,6 +8,7 @@
   weight: 700;
   line-height: 130%;
   letter-spacing: 0.25px;
+  color: hsl(217, 19%, 35%);
 }
 
 .text-preset-2__medium {
@@ -16,6 +17,7 @@
   weight: 500;
   line-height: 140%;
   letter-spacing: 0.12%;
+  color: hsl(214, 17%, 51%);
 }
 
 .text-preset-2__bold {
@@ -24,6 +26,7 @@
   weight: 700;
   line-height: 140%;
   letter-spacing: 0.12%;
+  color: hsl(217, 19%, 35%);
 }
 
 .text-preset-3 {
@@ -36,10 +39,19 @@
 }
 
 .attribution {
-  font-size: 11px;
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.12%;
   text-align: center;
 }
 
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.12%;
+  color: hsl(214, 17%, 51%);
 }/*# sourceMappingURL=styles.css.map */
