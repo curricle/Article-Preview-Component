@@ -1,6 +1,26 @@
+@use 'mixins' as *;
+@use 'variables' as *;
+
 @font-face {
     font-family: 'Manrope';
     src: url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+}
+
+.text-preset-1 {
+    @include text-style(20px, 700, 130%, 0.25px);
+}
+
+.text-preset-2__medium {
+    @include text-style;
+}
+
+.text-preset-2__bold {
+    @include text-style($weight: 700);
+}
+
+.text-preset-3 {
+    @include text-style($letter-spacing: 25%);
+    text-transform: uppercase;
 }
 
 .attribution { 

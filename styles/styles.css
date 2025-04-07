@@ -2,6 +2,39 @@
   font-family: "Manrope";
   src: url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
 }
+.text-preset-1 {
+  font-family: "Manrope", sans-serif;
+  font-size: 20px;
+  weight: 700;
+  line-height: 130%;
+  letter-spacing: 0.25px;
+}
+
+.text-preset-2__medium {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  weight: 500;
+  line-height: 140%;
+  letter-spacing: 0.12%;
+}
+
+.text-preset-2__bold {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  weight: 700;
+  line-height: 140%;
+  letter-spacing: 0.12%;
+}
+
+.text-preset-3 {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  weight: 500;
+  line-height: 140%;
+  letter-spacing: 25%;
+  text-transform: uppercase;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
