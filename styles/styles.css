@@ -121,6 +121,41 @@ body {
   flex-direction: column;
 }
 
+.share-popup {
+  font-family: "Manrope", sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 140%;
+  letter-spacing: 25%;
+  text-transform: uppercase;
+  color: hsl(212, 23%, 69%);
+  background-color: hsl(217, 19%, 35%);
+  position: relative;
+  top: -20px;
+  left: -45%;
+  padding: 18px 38px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border-radius: 10px;
+}
+.share-popup img {
+  height: 20px;
+  width: 20px;
+}
+
+.share-popup__pip {
+  background-color: hsl(217, 19%, 35%);
+  height: 12px;
+  width: 24px;
+  position: relative;
+  top: -20px;
+}
+
+.hidden {
+  display: none;
+}
+
 .attribution {
   font-family: "Manrope", sans-serif;
   font-size: 13px;
