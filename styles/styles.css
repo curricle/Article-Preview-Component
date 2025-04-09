@@ -55,7 +55,7 @@ body {
 }
 
 .article-preview {
-  height: 280px;
+  min-height: 280px;
   width: 80%;
   max-width: 730px;
   background-color: hsl(0, 100%, 100%);
@@ -68,10 +68,11 @@ body {
   width: 285px;
   background-image: url("../images/drawers.jpg");
   background-size: cover;
+  background-position: center;
   border-radius: 10px 0 0 10px;
 }
 
-.article-preview-content {
+.article-preview__content {
   display: flex;
   flex-direction: column;
   max-width: 60%;
@@ -79,14 +80,14 @@ body {
   justify-content: space-between;
 }
 
-.article-preview-text {
+.article-preview__text {
   padding: 30px 40px;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.article-preview-footer {
+.article-preview__footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -192,4 +193,19 @@ body {
   line-height: 140%;
   letter-spacing: 0.12%;
   color: hsl(214, 17%, 51%);
+}
+
+@media screen and (max-width: 600px) {
+  .article-preview {
+    flex-direction: column;
+    width: 90%;
+  }
+  .article-preview__content, .article-preview__text {
+    max-width: 100%;
+  }
+  .featured-image {
+    height: 200px;
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+  }
 }/*# sourceMappingURL=styles.css.map */
