@@ -1,96 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Article preview component</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Article preview component</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/styles.css">
 
-</head>
-<body>
+  </head>
+  <body>
 
-  <article class="article-preview">
+    <article class="article-preview">
 
-    <div class="featured-image">
-
-    </div>
-
-    <section class="article-preview-content">
-
-      <div class="article-preview-text">
-
-        <header>
-          <h1 class="text-preset-1">
-            Shift the overall look and feel by adding these wonderful 
-    touches to furniture in your home
-          </h1>
-        </header>
-        
-        <p class="text-preset-2__medium">
-        Ever been in a room and felt like something was missing? Perhaps 
-        it felt slightly bare and uninviting. I’ve got some simple tips 
-        to help you make any room feel complete.
-        </p>
+      <div class="featured-image">
 
       </div>
 
-      <footer class="article-preview-footer">
+      <section class="article-preview-content">
 
-        <div class="author">
-          <picture>
-            <img src="./images/avatar-michelle.jpg" alt="Headshot: Michelle Appleton" />
-          </picture>
+        <div class="article-preview-text">
 
-          <div class="article-details">
-            <span class="text-preset-2__bold">
-              Michelle Appleton
-            </span>
-            <span class="text-preset-2__medium">
-              28 Jun 2020
-            </span> 
-          </div>
-              
+          <header>
+            <h1 class="text-preset-1">
+              Shift the overall look and feel by adding these wonderful 
+      touches to furniture in your home
+            </h1>
+          </header>
+          
+          <p class="text-preset-2__medium">
+          Ever been in a room and felt like something was missing? Perhaps 
+          it felt slightly bare and uninviting. I’ve got some simple tips 
+          to help you make any room feel complete.
+          </p>
+
         </div>
-        
-        <div class="share-button">
-          <div class="share-popup hidden">
-            <div class="share-popup__content">
-              <span class="share-popup__text">
-                Share
+
+        <footer class="article-preview-footer">
+
+          <div class="author">
+            <picture>
+              <img src="./images/avatar-michelle.jpg" alt="Headshot: Michelle Appleton" />
+            </picture>
+
+            <div class="article-details">
+              <span class="text-preset-2__bold">
+                Michelle Appleton
               </span>
-              <a><img id="facebook-icon" src="./images/icon-facebook.svg" alt="Facebook" /></a>
-              <a><img id="twitter-icon" src="./images/icon-twitter.svg" alt="Twitter" /></a>
-              <a><img id="pinterest-icon" src="./images/icon-pinterest.svg" alt="Pinterest" /></a>
+              <span class="text-preset-2__medium">
+                28 Jun 2020
+              </span> 
             </div>
-            <div class="share-popup__pip">
-          </div>            
+                
           </div>
+          
+          <div class="share-button">
+            <div class="share-popup hidden" id="share-popup">
+              <div class="share-popup__content">
+                <span class="share-popup__text">
+                  Share
+                </span>
+                <a><img id="facebook-icon" src="./images/icon-facebook.svg" alt="Facebook" /></a>
+                <a><img id="twitter-icon" src="./images/icon-twitter.svg" alt="Twitter" /></a>
+                <a><img id="pinterest-icon" src="./images/icon-pinterest.svg" alt="Pinterest" /></a>
+              </div>
+              <div class="share-popup__pip">
+            </div>            
+            </div>
 
-          <button>
-            <img id="share-icon" src="./images/icon-share.svg" alt="Share" />
-          </button>
-        </div>
-        
-        
-      </footer>
+            <button onclick="toggleModal()">
+              <img id="share-icon" src="./images/icon-share.svg" alt="Share"/>
+            </button>
+          </div>
+        </footer>
 
-    </section>
+      </section>
 
-  </article>
+    </article>
+    
+    <footer class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://github.com/curricle">S. Jordan</a>.
+    </footer>
 
-
-  
-  <footer class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://github.com/curricle">S. Jordan</a>.
-  </footer>
-</body>
+    <script src="toggle_modal.js"></script>
+  </body>
 </html>

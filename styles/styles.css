@@ -171,6 +171,10 @@ body {
   border-bottom: 0;
 }
 
+.hidden {
+  overflow: hidden;
+}
+
 .attribution {
   font-family: "Manrope", sans-serif;
   font-size: 13px;
