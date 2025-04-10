@@ -77,9 +77,9 @@ body {
 }
 
 .article-preview__footer {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto;
     align-items: center;
-    justify-content: space-between;
     padding: 0px $spacing-500 30px $spacing-500;
 }
 
@@ -107,6 +107,7 @@ body {
     align-items: flex-end;
     width: $spacing-400;
     position: relative;
+    justify-self: last baseline;
 }
 
 .share-button__button {
