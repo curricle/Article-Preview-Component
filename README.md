@@ -23,11 +23,11 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+![](./images/screenshot.png)
 
 ### Links
 
-- Solution URL: [Solution on Frontend Mentor](https://your-solution-url.com)
+- Solution URL: [Solution on Frontend Mentor](https://www.frontendmentor.io/solutions/article-preview-component-using-flexbox-grid-and-scss-MZGEfAv2fy)
 - Live Site URL: [GitHub Pages](https://curricle.github.io/Article-Preview-Component/)
 
 ## My process
