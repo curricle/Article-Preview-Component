@@ -42,42 +42,43 @@
 
         </div>
 
-        <footer class="article-preview__footer">
+        <footer class="article-preview__footer" id="article-footer">
 
-          <div class="article-preview__footer__content">
-            <div class="author">
-              <picture>
-                <img src="./images/avatar-michelle.jpg" alt="Headshot: Michelle Appleton" />
-              </picture>
-  
-              <div class="article-details">
-                <span class="text-preset-2__bold">
-                  Michelle Appleton
+          <div class="author">
+            <picture>
+              <img src="./images/avatar-michelle.jpg" alt="Headshot: Michelle Appleton" />
+            </picture>
+
+            <div class="article-details">
+              <span class="text-preset-2__bold">
+                Michelle Appleton
+              </span>
+              <span class="text-preset-2__medium">
+                28 Jun 2020
+              </span> 
+            </div>        
+          </div>
+          
+          <div class="share-button share-popup--active">
+            <div class="share-popup hidden" id="share-popup">
+              <div class="share-popup__content" id="popup-content">
+                <span class="share-popup__text">
+                  Share
                 </span>
-                <span class="text-preset-2__medium">
-                  28 Jun 2020
-                </span> 
-              </div>        
-            </div>
-            
-            <div class="share-button">
-              <div class="share-popup hidden" id="share-popup">
-                <div class="share-popup__content">
-                  <span class="share-popup__text">
-                    Share
-                  </span>
-                  <a><img id="facebook-icon" src="./images/icon-facebook.svg" alt="Facebook" /></a>
-                  <a><img id="twitter-icon" src="./images/icon-twitter.svg" alt="Twitter" /></a>
-                  <a><img id="pinterest-icon" src="./images/icon-pinterest.svg" alt="Pinterest" /></a>
-                </div>
-                <div class="share-popup__pip">
-                </div>            
+                <a><img id="facebook-icon" src="./images/icon-facebook.svg" alt="Facebook" /></a>
+                <a><img id="twitter-icon" src="./images/icon-twitter.svg" alt="Twitter" /></a>
+                <a><img id="pinterest-icon" src="./images/icon-pinterest.svg" alt="Pinterest" /></a>
+                <button class="share-button__button" onclick="toggleModal()">
+                  <img class="share-icon" src="./images/icon-share.svg" alt="Share"/>
+                </button>
               </div>
-  
-              <button class="share-button__button" onclick="toggleModal()">
-                <img id="share-icon" src="./images/icon-share.svg" alt="Share"/>
-              </button>
+              <div class="share-popup__pip">
+              </div>            
             </div>
+
+            <button id="default-share-button" class="share-button__button" onclick="toggleModal()">
+              <img class="share-icon" src="./images/icon-share.svg" alt="Share"/>
+            </button>
           </div>
 
         </footer>
